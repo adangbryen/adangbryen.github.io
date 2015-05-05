@@ -15,7 +15,7 @@ tagline: Site Tagline
 author :
   name : aDaNG Bryen
   email : adangading##gmail.com
-  github : adangbryen
+  github : https://github.com/adangbryen/adangbryen.github.io
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
