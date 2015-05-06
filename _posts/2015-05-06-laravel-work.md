@@ -101,7 +101,7 @@ tags: [phpstorm, php]
         }
 
     }
-
-'cd ~\Library\Performance\webide80\colors`
+    
+`cd ~\Library\Performance\webide80\colors`
 
 <!--break-->
