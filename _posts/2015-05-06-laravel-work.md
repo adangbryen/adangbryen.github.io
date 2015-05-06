@@ -21,8 +21,9 @@ tags: [phpstorm, php]
 php artisan help make:migration
 php artisan make:migration create_customers_table --create="customers"
 <!--break-->
-```
+
 * 产生如下代码 可以开始写自己的代码了
+
 ```
 <?php
 
@@ -56,8 +57,9 @@ class CreateCustomersTable extends Migration {
     }
 
 }
-```
+<!--break-->
 
+*-----*
 ```
 []$ php artisan make:migration add_test_to_customers --table="customers"
 <?php
