@@ -1,4 +1,4 @@
----
+---  
 layout: post
 title: "Be awesome in phpstorm"
 description: "phpstorm 设置 jeffrey way 推荐方式"
@@ -12,10 +12,55 @@ tags: [phpstorm, php]
  
 **参考 [视频连接](https://laracasts.com/series/)**
 ####laravel 使用记录 
-1. 关闭breadcrumb  command + , 打开settings search 'breadc' 关闭breadcrumb
+> 数据库 migrate 使用 [https://laracasts.com/](https://laracasts.com/series/laravel-5-fundamentals/episodes/7)
+> 
+* 文字记录一下使用过程 
+
+```
+//默认是migration目录下的文件php artisan migrate 
+php artisan help make:migration
+php artisan make:migration create_customers_table --create="customers"
+<!--break-->
+```
+* 产生如下代码 可以开始写自己的代码了
+```
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateCustomersTable extends Migration {
+
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('customers', function(Blueprint $table)
+        {
+            $table->increments('id');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('customers');
+    }
+
+}
+```
 2. 修改colors and fonts
+,,,
     cd ~\Library\Performance\webide80\colors
-    
+,,,
  wget https://raw.githubusercontent.com/daylerees/colour-schemes/master/jetbrains/earthsong.icls
  下载之后 重启phpstorm  选中刚刚下载的主题
 3. color ide  command+shift+a 打开 plugins 输入color 选择color ide install 然后重启
