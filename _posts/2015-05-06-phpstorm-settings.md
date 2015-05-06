@@ -23,10 +23,10 @@ tags: [phpstorm, php]
                     *command + o 查找symbol 快捷键
     这样下来 常用的>>command + i symbol >>command + o class >>command+p open file(这个跟sublime text保持一致)
 5. 保持对齐  command + alt + f  reformat code
-6. 自定义对齐格式  - wrappings and braces --brace placement  --- class declaration ---- end of line  
-                                                            --- other ---- next line  
-                - blank lines          -- after class header  --- 1
-                - others               -- 
+6. 自定义对齐格式  > wrappings and braces >> brace placement  >>> class declaration >>>> end of line  
+                                                            >>> other >>>> next line  
+                > blank lines          -- after class header  --- 1
+                > others               -- 
 
 
 <!--break-->
