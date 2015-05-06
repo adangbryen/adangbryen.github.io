@@ -57,8 +57,47 @@ class CreateCustomersTable extends Migration {
 
 }
 ```
-2. 修改colors and fonts
-,,,
+
+```
+[]$ php artisan make:migration add_test_to_customers --table="customers"
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class AddTestToCustomer extends Migration {
+
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('customers', function(Blueprint $table)
+        {
+            //$table->increments('');
+            //$table->timestamps();
+            $table->boolean('etea');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('customers', function(Blueprint $table)
+        {
+            $table->dropColumn('etea');
+        });
+    }
+
+}
+
+```
     cd ~\Library\Performance\webide80\colors
 ,,,
  wget https://raw.githubusercontent.com/daylerees/colour-schemes/master/jetbrains/earthsong.icls
