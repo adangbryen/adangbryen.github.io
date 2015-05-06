@@ -22,10 +22,16 @@ tags: [phpstorm, php]
     $php artisan help make:migration
     $php artisan make:migration create_customers_table --create="customers"
 
+    this is code
 
+##### this is tilte
+    this is code again
 
-* 产生如下代码 可以开始写自己的代码了  
-`
+{
+    这里写代码 看看 {}
+}
+    
+#####产生如下代码 可以开始写自己的代码了
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Database\Migrations\Migration;
 
@@ -56,8 +62,7 @@ tags: [phpstorm, php]
         }
 
     }
-`
-`
+#### code code code
 
     []$ php artisan make:migration add_test_to_customers --table="customers"
     <?php
@@ -97,6 +102,6 @@ tags: [phpstorm, php]
 
     }
 
-'   cd ~\Library\Performance\webide80\colors
+'cd ~\Library\Performance\webide80\colors`
 
 <!--break-->
