@@ -16,94 +16,87 @@ tags: [phpstorm, php]
 
 * 文字记录一下使用过程 
 
-`
-//默认是migration目录下的文件
-{
-php artisan migrate 
-}
-{
-php artisan help make:migration
-}
-{
-php artisan make:migration create_customers_table --create="customers"
-}
-`
+`//默认是migration目录下的文件  `
+    
+    $php artisan migrate 
+    $php artisan help make:migration
+    $php artisan make:migration create_customers_table --create="customers"
+
+
 
 * 产生如下代码 可以开始写自己的代码了
 
-`
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
 
-class CreateCustomersTable extends Migration {
+    use Illuminate\Database\Schema\Blueprint;
+    use Illuminate\Database\Migrations\Migration;
 
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('customers', function(Blueprint $table)
+    class CreateCustomersTable extends Migration {
+
+        /**
+         - Run the migrations.
+         *
+         - @return void
+         */
+        public function up()
         {
-            $table->increments('id');
-            $table->timestamps();
-        });
-    }
+            Schema::create('customers', function(Blueprint $table)
+            {
+                $table->increments('id');
+                $table->timestamps();
+            });
+        }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::drop('customers');
-    }
-
-}
-`
-
-`
-[]$ php artisan make:migration add_test_to_customers --table="customers"
-<?php
-
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
-class AddTestToCustomer extends Migration {
-
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::table('customers', function(Blueprint $table)
+        /**
+         - Reverse the migrations.
+         *
+         - @return void
+         */
+        public function down()
         {
-            //$table->increments('');
-            //$table->timestamps();
-            $table->boolean('etea');
-        });
+            Schema::drop('customers');
+        }
+
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('customers', function(Blueprint $table)
+
+    []$ php artisan make:migration add_test_to_customers --table="customers"
+    <?php
+
+    use Illuminate\Database\Schema\Blueprint;
+    use Illuminate\Database\Migrations\Migration;
+
+    class AddTestToCustomer extends Migration {
+
+        /**
+         - Run the migrations.
+         *
+         - @return void
+         */
+        public function up()
         {
-            $table->dropColumn('etea');
-        });
+            Schema::table('customers', function(Blueprint $table)
+            {
+                //$table->increments('');
+                //$table->timestamps();
+                $table->boolean('etea');
+            });
+        }
+
+        /**
+         - Reverse the migrations.
+         *
+         - @return void
+         */
+        public function down()
+        {
+            Schema::table('customers', function(Blueprint $table)
+            {
+                $table->dropColumn('etea');
+            });
+        }
+
     }
 
-}
-
-```
     cd ~\Library\Performance\webide80\colors
 ,,,
  wget https://raw.githubusercontent.com/daylerees/colour-schemes/master/jetbrains/earthsong.icls
