@@ -15,6 +15,7 @@ tags: [phpstorm, php]
 1. 关闭breadcrumb  command + , 打开settings search 'breadc' 关闭breadcrumb
 2. 修改colors and fonts
     cd ~\Library\Performance\webide80\colors
+    
  wget https://raw.githubusercontent.com/daylerees/colour-schemes/master/jetbrains/earthsong.icls
  下载之后 重启phpstorm  选中刚刚下载的主题
 3. color ide  command+shift+a 打开 plugins 输入color 选择color ide install 然后重启
