@@ -3,15 +3,15 @@ layout: post
 title: "Be awesome in phpstorm"
 description: "phpstorm 设置 jeffrey way 推荐方式"
 category: phpstorm
-tags: [phpstorm,php]
+tags: [phpstorm, php]
 ---
 {% include JB/setup %}
-# jeffrey way 推荐的phpstorm 快捷使用方式
+# jeffrey way 推荐的phpstorm快捷使用方式
 ---
 
  
-### 参考 [视频连接](https://laracasts.com/series/how-to-be-awesome-in-phpstorm/)
-> 每次换新的环境都要重新设置一下phpstorm的操作 留个记录
+**参考 [视频连接](https://laracasts.com/series/how-to-be-awesome-in-phpstorm/)**
+######每次换新的环境都要重新设置一下phpstorm的操作 留个记录
 1. 关闭breadcrumb  command + , 打开settings search 'breadc' 关闭breadcrumb
 2. 修改colors and fonts
     cd ~\Library\Performance\webide80\colors
