@@ -1,7 +1,7 @@
 ---  
 layout: post
-title: "Be awesome in phpstorm"
-description: "phpstorm 设置 jeffrey way 推荐方式"
+title: "laravel 使用记录"
+description: "laravel 使用记录"
 category: phpstorm
 tags: [phpstorm, php]
 ---
