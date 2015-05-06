@@ -9,11 +9,11 @@ tags: [phpstorm, php]
 # laravel 使用习惯
 ---
 
- 
+    
 **参考 [视频连接](https://laracasts.com/series/)**
 ####laravel 使用记录 
 > 数据库 migrate 使用 [https://laracasts.com/](https://laracasts.com/series/laravel-5-fundamentals/episodes/7)
-
+    
 * 文字记录一下使用过程 
 
 `//默认是migration目录下的文件  `
@@ -24,9 +24,8 @@ tags: [phpstorm, php]
 
 
 
-* 产生如下代码 可以开始写自己的代码了
-
-
+* 产生如下代码 可以开始写自己的代码了*  
+`
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Database\Migrations\Migration;
 
@@ -57,7 +56,8 @@ tags: [phpstorm, php]
         }
 
     }
-
+`
+`
 
     []$ php artisan make:migration add_test_to_customers --table="customers"
     <?php
@@ -97,20 +97,6 @@ tags: [phpstorm, php]
 
     }
 
-    cd ~\Library\Performance\webide80\colors
-,,,
- wget https://raw.githubusercontent.com/daylerees/colour-schemes/master/jetbrains/earthsong.icls
- 下载之后 重启phpstorm  选中刚刚下载的主题
-3. color ide  command+shift+a 打开 plugins 输入color 选择color ide install 然后重启
-4. 快捷键 command+, * 打开keymaps 修改command+p 为open file的快捷键
-                    *command + R   查看本页的结构  --> file structures
-                    *command + o 查找symbol 快捷键
-    这样下来 常用的>>command + i symbol >>command + o class >>command+p open file(这个跟sublime text保持一致)
-5. 保持对齐  command + alt + f  reformat code
-6. 自定义对齐格式  > wrappings and braces >> brace placement  >>> class declaration >>>> end of line  
-                                                            >>> other >>>> next line  
-                > blank lines          -- after class header  --- 1
-                > others               -- 
-
+'   cd ~\Library\Performance\webide80\colors
 
 <!--break-->
