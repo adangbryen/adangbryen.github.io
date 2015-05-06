@@ -18,9 +18,15 @@ tags: [phpstorm, php]
 
 `
 //默认是migration目录下的文件
-{php artisan migrate }
-{php artisan help make:migration}
-{php artisan make:migration create_customers_table --create="customers"}
+{
+php artisan migrate 
+}
+{
+php artisan help make:migration
+}
+{
+php artisan make:migration create_customers_table --create="customers"
+}
 `
 
 * 产生如下代码 可以开始写自己的代码了
