@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 生生
-tagline: 生生不息谓之易
+title: 大中至正
+tagline: 生生不息
 ---
 {% include JB/setup %}
 

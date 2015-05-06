@@ -3,7 +3,7 @@ layout: post
 title: "Be awesome in phpstorm"
 description: "phpstorm 设置 jeffrey way 推荐方式"
 category: phpstorm
-tags: [phpstorm],[php]
+tags: [phpstorm,php]
 ---
 {% include JB/setup %}
 # jeffrey way 推荐的phpstorm 快捷使用方式
