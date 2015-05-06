@@ -13,20 +13,18 @@ tags: [phpstorm, php]
 **参考 [视频连接](https://laracasts.com/series/)**
 ####laravel 使用记录 
 > 数据库 migrate 使用 [https://laracasts.com/](https://laracasts.com/series/laravel-5-fundamentals/episodes/7)
-> 
+
 * 文字记录一下使用过程 
 
-```
+`
 //默认是migration目录下的文件php artisan migrate 
 php artisan help make:migration
 php artisan make:migration create_customers_table --create="customers"
-<!--break-->
+`
 
 * 产生如下代码 可以开始写自己的代码了
 
-```
-<?php
-
+`
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -57,10 +55,9 @@ class CreateCustomersTable extends Migration {
     }
 
 }
-<!--break-->
+`
 
-*-----*
-```
+`
 []$ php artisan make:migration add_test_to_customers --table="customers"
 <?php
 
