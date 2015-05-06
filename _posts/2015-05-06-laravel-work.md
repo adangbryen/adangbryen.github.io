@@ -24,7 +24,7 @@ tags: [phpstorm, php]
 
 
 
-* 产生如下代码 可以开始写自己的代码了*  
+* 产生如下代码 可以开始写自己的代码了  
 `
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Database\Migrations\Migration;
