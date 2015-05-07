@@ -83,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : adangbryen
+      short_name : httpadangbryengithubio
     livefyre :
       site_id : 123
     intensedebate :
