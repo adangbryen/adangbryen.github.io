@@ -13,7 +13,7 @@ safe: false
 title : aDaNG
 tagline: Site Tagline
 author :
-  name : aDaNG Bryen
+  name : aDaNG
   email : adangading##gmail.com
   github : https://github.com/adangbryen/adangbryen.github.io
 
@@ -83,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : adangbryen
     livefyre :
       site_id : 123
     intensedebate :
